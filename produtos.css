@@ -33,6 +33,11 @@ nav a {
      text-decoration: none; /*Tirando toda decoração do meu texto*/
 }
 
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produtos{
     width: 940px;
     margin: 0 auto;
