@@ -96,3 +96,16 @@ nav a:active{/*Quando o usuário clicar, mudamos a cor da borda*/
     font-size: 18px;
 }
 
+
+footer{
+    text-align: center; /*centralizando texto*/
+    padding: 40px 0;
+    background: url("bg.jpg"); /*Colocando uma imagem como plano de fundo, através do url(), indicamos onde nossa imagem está*/
+}
+
+.copy{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
