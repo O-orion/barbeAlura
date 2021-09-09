@@ -1,5 +1,17 @@
+header{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #CCCCCC;
+	margin-bottom: 20px;
+}
 #banner {
-	width:100%;
+	width:60%;
+}
+#banner:hover{
+	border: #FF0000 solid 2px;
+	border-radius: 10px;
 }
 
 .principal{
@@ -7,8 +19,22 @@
 	padding: 30px;
 }
 
+.principal:hover{
+	border: tomato solid 2px;
+	border-radius: 20px;
+}
+
 .titulo-principal {
-	padding-left: 20px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	padding-right: 10%;
+}
+
+.titulo-principal:hover{
+	color: brown;
+	font-size: 50px;
+	font-weight: bold;
 }
 
 .titulo-centralizado {
@@ -36,13 +62,30 @@ em strong {
 	padding: 20px;
 }
 
+
+
 ul {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
 	margin-right: 15%;
+	border: tomato solid 2px;
+}
+
+.beneficios ul:hover li{
+	margin-bottom: 4px;
+	border: violet solid 2px;
+	border-radius: 10px;
+	color: yellowgreen;
 }
 
 .imagembeneficios {
 	width: 50%;
+	border-radius: 10px;
+}
+
+.imagembeneficios:hover{
+	border: turquoise solid 2px;
+	border-radius: 10px;
+	width: 51%;
 }
