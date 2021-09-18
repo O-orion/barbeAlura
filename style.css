@@ -150,11 +150,13 @@ form .input-padrao{
     font-size: 18px;
     border: none;
     border-radius: 6px;
-
-    transition: 1s background ; /*tempo em que vai ocorre a mudanã de cor do background*/
+    /*all que dizer que esse transition vai se aplicado em todos os efeitos*/
+    transition: 1s all ; /*tempo em que vai ocorre a mudanã de cor do background*/
     cursor: pointer;
 }
 
 .enviar:hover{
     background: darkorange;
+    transform: scale(1.2) rotate(1deg); /*apropriedade transform me permite fazer varias coisas uma dela e aumentar tamanho do meu elemento, atravé do scale, o calculo é proporcional vai multiplicar tamanho do elemento pelo valor recebido*/
+    /*rotate(1deg) me permii rotaciona o elemento na tela, através do degraus passados*/
 }
