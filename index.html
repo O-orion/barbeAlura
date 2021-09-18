@@ -3,16 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Barbearia Alura</title>
-		<link rel="stylesheet" href="style-home.css">
+        <link rel="stylesheet" href="reset.css"> <!--Precisa ser o primeiro pos a ordem importa-->
+        <link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 		<header>
-			<h1 class="titulo-principal">Barbearia Alura</h1>
-			<img id="banner" src="banner.jpg">
+			<div class="caixa">
+                <h1><img src="logo.png" alt="Logo da barbearia alura"></h1>
+                <nav> <!--Tag de navegção, menu-->
+                    <ul> <!--Lista não ordenada, montando o menu da página-->
+                        <li><a href="index.html">Home</a></li> <!--Tag a é uma Âncora para uma outra parte da web-->
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
 		</header>
+
+		<img src="./banner.jpg" alt="banner alura">
+		
 		<main>
-			<div class="principal">
+			<section class="principal">
 				<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 		 
 				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
@@ -20,9 +32,9 @@
 				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 	
 				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-			</div>
+			</section> <!--usamos section quando temos um conteúdo complexos, quando alguns textos falam da mesma coisa ou elementos iguais-->
 	
-			<div class="beneficios">
+			<section class="beneficios">
 				<h3 class="titulo-centralizado">Benefícios</h3>
 	
 				<ul>
@@ -33,7 +45,11 @@
 				</ul>
 	
 				<img src="beneficios.jpg" class="imagembeneficios">
-			</div>
+			</section>
 		</main>
+		<footer><!--Tag do rodapé-->
+            <img src="./logo-branco.png" alt="logo da barberia alura">
+            <p class="copy">&copy; Copyright Barbearia Alura</p>
+        </footer>
 	</body>
 </html>
