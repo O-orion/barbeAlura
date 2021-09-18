@@ -130,15 +130,6 @@ form .input-padrao{
     width: 50%;
 }
 
-form input:hover .enviar{
-    border: #C78C19 solid 2px;
-    background-color: aliceblue;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    color: red;
-}
-
 .check{
     margin: 20px 0;
 }
@@ -151,8 +142,19 @@ form input:hover .enviar{
     margin: 20px 0;
 }
 .enviar{
-    width: 50%;
-    
-    padding: 10px 20px;
-    border-radius: 10px;
+    width: 40%;
+    background: orange;
+    color: white;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+
+    transition: 1s background ; /*tempo em que vai ocorre a mudanã de cor do background*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
 }
