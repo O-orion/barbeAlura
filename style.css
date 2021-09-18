@@ -1,91 +1,158 @@
+*{
+    margin: 0;
+}
 header{
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-	background-color: #CCCCCC;
-	margin-bottom: 20px;
-}
-#banner {
-	width:60%;
-}
-#banner:hover{
-	border: #FF0000 solid 2px;
-	border-radius: 10px;
+    background: #BBBBBB;
+    padding: 20px 0; /*Definindo espaçamento interno dentro do header, 20px para o bottom e para top, zero para as laterais*/
 }
 
-.principal{
-	background: #CCCCCC;
-	padding: 30px;
+.caixa{
+    position: relative; /*Definindo position relative, estamos dizendo para ele envelopa outros elementos com position absolute*/
+    width: 940px; /*Tamanho padrão*/
+    margin: 0 auto; /*Estamos dizendo que margindo do topo e do bottom é zero, e que a margin entre o left e o right e automatica*/
 }
 
-.principal:hover{
-	border: tomato solid 2px;
-	border-radius: 20px;
+nav{
+    position: absolute; /*position absolute me permiti posicionar meu elemento em qualquer lugar*/
+    top: 110px; /*Definindo o espaçamento para o topo como 0*/
+    right: 0; /*definindo espaçamento para direita como 0*/
 }
 
-.titulo-principal {
-	position: absolute;
-	top: 20%;
-	right: 0;
-	padding-right: 10%;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.titulo-principal:hover{
-	color: brown;
-	font-size: 50px;
-	font-weight: bold;
+nav a {
+    text-transform: uppercase; /* Transformando todo texto da tag <a>
+     que estão contida na tag nav
+     */
+     color: #000000;
+     font-weight: bold; /*Colocando texto em negrito */
+     font-size: 22px; /*Alterando tamanho da minha fonte*/
+     text-decoration: none; /*Tirando toda decoração do meu texto*/
 }
 
-.titulo-centralizado {
-	text-align: center
+nav a:hover{ /*Mapeando os passos do usuáio, quando passa o mouse por cima, mudamos a cor da borda*/
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-p {
-	text-align: center;
+nav a:active{/*Quando o usuário clicar, mudamos a cor da borda*/
+    border-color: green;
 }
 
-#missao {
-	font-size: 20px
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block; /*Continua ocupando espaço total da página mas pode ser ajustado*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /*o inline-block, por padrão alinha pela linha de baixo, aqui estamos trocando o alinhamento para linha do elemento de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Estamos definindo o 30% como tamanho definitivo, assim o padding será atribuido dentro desse tamanho ao invés de aomentar o seu tamanho*/
+
+    /*Borda*/
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    /*Pode-se escrever também border: 2px solid #000000 */
+    border-radius: 10px; /*Estamos a redondando as bordas em 10px em cada lado*/
 }
 
-em strong {
-	color: #FF0000;
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+.produtos li:active{
+    border-color: green;
 }
 
-.itens {
-	font-style: italic
+.produtos li:hover h2{/*Estamos dizendo que quando o usuário passa mouse sobre nosso produto, vamos mudar o estilo do h2*/
+    font-size: 35px;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
+.produtos li:hover p{
+    font-weight: bold;
+}
+
+.produtos h2{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produto-desc{
+    font-size: 18px;
 }
 
 
-
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-	border: tomato solid 2px;
+footer{
+    text-align: center; /*centralizando texto*/
+    padding: 40px 0;
+    background: url("bg.jpg"); /*Colocando uma imagem como plano de fundo, através do url(), indicamos onde nossa imagem está*/
 }
 
-.beneficios ul:hover li{
-	margin-bottom: 4px;
-	border: violet solid 2px;
-	border-radius: 10px;
-	color: yellowgreen;
+.copy{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
 
-.imagembeneficios {
-	width: 50%;
-	border-radius: 10px;
+main{
+    width: 940px; /*definindo um tamanho fixo para main*/
+    margin: 0 auto; /*espaço externo 0 pra cima e para baixo e automatico para os lados*/
 }
 
-.imagembeneficios:hover{
-	border: turquoise solid 2px;
-	border-radius: 10px;
-	width: 51%;
+form{
+    margin: 40px 0; /*defindo uma margin de 40px espaçamento externo pra cima e pra baixo*/
+}
+
+form label, legend{ /* com a ',' me permiti aplicar esse css em outros seletores*/
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+form .input-padrao{
+    display: block;
+    margin: 0 0 10px;
+    padding: 20px 10px;
+    width: 50%;
+}
+
+form input:hover .enviar{
+    border: #C78C19 solid 2px;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+
+.check{
+    margin: 20px 0;
+}
+
+.contato{
+    margin: 20px 0;
+}
+
+.turno{
+    margin: 20px 0;
+}
+.enviar{
+    width: 50%;
+    
+    padding: 10px 20px;
+    border-radius: 10px;
 }
