@@ -115,7 +115,7 @@ footer {
 }
 
 main {
-  width: 940px; /*definindo um tamanho fixo para main*/
+ /* width: 940px; /*definindo um tamanho fixo para main
   margin: 0 auto; /*espaço externo 0 pra cima e para baixo e automatico para os lados*/
 }
 
@@ -198,7 +198,10 @@ width: 100%;
 }
 
 .principal{
-  margin: 0 0 1em;
+  margin: 3em 0;
+  background: #FEFEFE;
+  width: 940px; /*definindo um tamanho fixo para main*/
+  margin: 0 auto; /*espaço externo 0 pra cima e para baixo e automatico para os lados*/
 }
 
 .principal strong{
@@ -213,8 +216,33 @@ width: 100%;
   width: 120px;
   float: left; /*A img ou elemento irá flutuar em nosso html, e vai joga todos os textos para baixo, criando uma sombra em baixo do elemento*/
   margin: 0 20px 20px 0;
-}´
+}
 
+.mapa{
+  padding: 3em 0;
+  background: linear-gradient(#FEFEFE, #888888  );/*linear-gradient(90deg,orange,blue); Criando um gradiente que começa na cor laranja é vai até a cor azul, do 0 laranja até o 100 azul
+   me permiti personaliza a direção do degrade com o graus, por exemplo 45deg vai nos dar um degrader reclinado
+   Me permiti também indica em qual porcentagem cada cor começa, por exemplo dps do orange colocar 50%
+   */
+  /* background:  radial-gradient(orange,blue,dark); cria um degrade em circulo aqui só não usamos o deg*/
+   /*width: 940px; definindo um tamanho fixo para main
+  margin: 0 auto; espaço externo 0 pra cima e para baixo e automatico para os lados*/
+}
+
+.mapa-conteudo{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.mapa p {
+  padding: 0 0 2em;
+  text-align: center;
+}
+.beneficios{
+  padding: 3em 0;
+  background: #888888;
+
+}
 .conteudo-beneficios{
   width: 640px;
   margin: 0 auto;
@@ -235,19 +263,10 @@ width: 100%;
 /*.itens:nth-child(2n){
   font-size: 55px;
 } :nth-child(2n) atribui um efeito a todos os itens pares, exemplo 2 4 6*/ 
-
 .imagem-beneficios{
   width: 60%;
 }
 
-.mapa{
-  padding: 3em 0;
-}
-
-.mapa p {
-  padding: 0 0 2em;
-  text-align: center;
-}
 
 .video{
   width: 560px;
