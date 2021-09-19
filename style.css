@@ -213,9 +213,30 @@ width: 100%;
   width: 120px;
   float: left; /*A img ou elemento irá flutuar em nosso html, e vai joga todos os textos para baixo, criando uma sombra em baixo do elemento*/
   margin: 0 20px 20px 0;
+}´
+
+.conteudo-beneficios{
+  width: 640px;
+  margin: 0 auto;
+}
+.lista-beneficio{
+  width: 40%;
+  display: inline-block; /*cuidado, não tem que ter espaços no html quando usamos inline-nlock, poi ele interpreta os epaços*/
+  vertical-align: top; /*Alinhando pela linha de cima*/
 }
 
-.imagembeneficios{
+.itens{
+  line-height: 1.5; /*tamanho da linha por padrão é 1, aumentando tamanho da linha da lista "li"*/
+}
+
+.itens:first-child{
+  font-weight: bold; /*First-child, está pegando o primeiro elemento filho da nossa lista é aplicandoum efeito*/
+}
+/*.itens:nth-child(2n){
+  font-size: 55px;
+} :nth-child(2n) atribui um efeito a todos os itens pares, exemplo 2 4 6*/ 
+
+.imagem-beneficios{
   width: 60%;
 }
 
@@ -230,7 +251,7 @@ width: 100%;
 
 .video{
   width: 560px;
-  margin: 1em auto;
+  margin: 2em auto;
 
 }
 
