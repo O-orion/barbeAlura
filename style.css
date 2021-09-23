@@ -197,6 +197,11 @@ width: 100%;
   clear: left; /*Limpando o float do elemento acima, assim nosso titulo irá fica uma linha abaixo e não na mesma linha do elemento que está flutuando*/
 }
 
+.itens:before{
+  content: "★";
+  margin-right: 1px;
+}
+
 .principal{
   margin: 3em 0;
   background: #FEFEFE;
